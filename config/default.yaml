@@ -1,0 +1,47 @@
+# config/default.yaml - DynaHome Configuration
+api:
+  cve_api_url: "https://services.nvd.nist.gov/rest/json/cves/2.0"
+  request_timeout: 30
+  max_retries: 3
+  rate_limit_delay: 5.0
+  max_delay: 120
+  user_agent: "DynaHome-ThreatCollector/1.1"
+
+ai:
+  model_load_timeout: 120
+  classification_threshold: 0.7
+  enable_fallback: true
+  batch_size: 10
+  memory_limit_mb: 2048
+  huggingface_model_cache: "~/.cache/huggingface"
+
+data:
+  data_directory: "data"
+  processed_directory: "data/processed"
+  reports_directory: "data/reports"
+  logs_directory: "data/logs"
+  backup_directory: "data/backups"
+  max_file_size_mb: 100
+  backup_retention_days: 30
+
+webapp:
+  port: 8501
+  host: "localhost"
+  enable_debug: true
+  session_timeout_minutes: 60
+  max_upload_size_mb: 200
+  enable_analytics: true
+
+security:
+  enable_logging: true
+  log_sensitive_data: false
+  api_key_rotation_days: 90
+  session_encryption: true
+  allowed_file_types: ['.json', '.csv', '.txt', '.log']
+
+performance:
+  thread_pool_size: 4
+  cache_size_mb: 512
+  enable_compression: true
+  async_processing: true
+  metrics_collection_interval: 300

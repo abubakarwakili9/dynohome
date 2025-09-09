@@ -1,0 +1,10 @@
+dynohome_env/ 
+data/ 
+backup/ 
+__pycache__/ 
+*.pyc 
+.env 
+*.log 
+Dockerfile 
+docker-compose.yml 
+.streamlit/ 

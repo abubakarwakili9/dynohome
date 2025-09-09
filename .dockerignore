@@ -1,0 +1,6 @@
+dynohome_env/ 
+data/ 
+backup/ 
+__pycache__/ 
+*.pyc 
+.git/ 

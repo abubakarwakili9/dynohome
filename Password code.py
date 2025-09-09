@@ -1,0 +1,3 @@
+# Set secure environment variables
+set DYNOHOME_ADMIN_USER=your_username
+set DYNOHOME_ADMIN_PASS_HASH=your_secure_hash
